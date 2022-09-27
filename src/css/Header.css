@@ -1,0 +1,31 @@
+.ul {
+    margin: 0;
+    background: rgb(97, 95, 95);
+    text-align: left;
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+ .ul li {
+    display: inline-block;
+    width: 80px;
+    line-height: 40px;
+}
+
+ .nav-a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-a:hover {
+    background: rgb(167, 167, 57) !important;
+    color: #333;
+} 
+
+.switch{
+    float: right;
+    margin-top: 10px;
+    margin-right: 20px;
+    text-decoration: none;
+}
