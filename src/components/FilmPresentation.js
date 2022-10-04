@@ -1,11 +1,15 @@
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useContext } from 'react'
 import '../css/FilmPresentation.css'
 import { useState } from 'react'
 import { ThemeContext } from './ThemeContext';
 export default function FilmPresentation({ films }) {
     const [film, setFilm] = useState([]);
+    // eslint-disable-next-line no-unused-vars
     const {dark, theme, toggle} = useContext(ThemeContext)
     const background = theme.backgroundColor
+    // eslint-disable-next-line no-unused-vars
     const color = theme.color
     return (
         <div className='container' style={{backgroundColor: background}}>
