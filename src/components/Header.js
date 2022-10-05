@@ -13,7 +13,7 @@ export default function Header() {
           <li><a className='active nav-a' style={{color: color}} href='#home'>Home</a></li>
           <li><a className='nav-a' style={{color: color}} href='#news'>News</a></li>
           <li><a className='nav-a' style={{color: color}} href='#about'>About</a></li>
-          <li><a className='nav-a' style={{color: color}} href='#contact'>Contact</a></li>
+          <li><a className='nav-a' style={{color: color}} href='/contact'>Contact</a></li>
           <a href='#' className='switch' onClick={toggle} style={{backgroundColor: background, color: color}} >
             Switch into {!dark ? 'Dark' : 'Light'} mode
           </a>

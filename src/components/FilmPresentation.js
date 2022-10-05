@@ -4,6 +4,7 @@ import React, { useContext } from 'react'
 import '../css/FilmPresentation.css'
 import { useState } from 'react'
 import { ThemeContext } from './ThemeContext';
+import { Link } from 'react-router-dom';
 export default function FilmPresentation({ films }) {
     const [film, setFilm] = useState([]);
     // eslint-disable-next-line no-unused-vars
@@ -19,7 +20,7 @@ export default function FilmPresentation({ films }) {
                     <h2 className='title'>{film.title}</h2>
                     <p className='year'>{film.year}</p>
                     <h3 className='nation'>{film.nation}</h3>
-                    <p><button type='button' onClick={() => { setFilm(film) }}><a href='#modal' className='detail'>Detail</a></button></p>
+                    <p><button type='button' onClick={() => { setFilm(film) }}><Link to={`/detail/${film.id}`} className='detail'>Detail</Link></button></p>
                 </div>
             ))}
             <div className='modal' id='modal'>
