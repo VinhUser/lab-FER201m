@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
-import FilmPresentation from './FilmPresentation';
+// import FilmPresentation from './FilmPresentation';
 import { films } from './ListOfFilms';
+import Pcard from './Pcard';
 export default class Main extends Component {
     constructor() {
         super();
@@ -11,7 +12,7 @@ export default class Main extends Component {
     render() {
         return (
             <div>
-                <FilmPresentation films={this.state.film}></FilmPresentation>
+                <Pcard films={this.state.film}></Pcard>
             </div>
         )
     }

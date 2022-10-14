@@ -1,4 +1,4 @@
-
+/* 
 .ul {
     margin: 0;
     background: rgb(97, 95, 95);
@@ -29,4 +29,8 @@
     margin-top: 10px;
     margin-right: 20px;
     text-decoration: none;
+} */
+.nav-wrapper{
+    background-color: rgb(71, 161, 239);
+    padding-left: 10px;
 }

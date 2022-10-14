@@ -3,51 +3,32 @@ import '../css/Contact.css';
 export default function Contact() {
     return (
         <div className='contact'>
-            <div className='content-left'>
-                <div className='address'>
-                    <i class="fa-solid fa-location-dot"></i>
-                    <span> Address </span>
-                    <p>Vinhomes Grand Park, Nguyen Xien Street, District 9, Ho Chi Minh City</p>
+            
+            <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="images/office.jpg"></img>
                 </div>
-                <div className='phone'>
-                    <i class="fa-solid fa-phone"></i>
-                    <span>  Phone </span>
-                    <p>+84 359404798</p>
+                <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Nguyễn Quốc Vinh<i class="material-icons right">more_vert</i></span>
+                    <p><a href="#">Facebook</a></p>
                 </div>
-                <div className='email'>
-                    <i class="fa-solid fa-envelope"></i>
-                    <span> Email </span>
-                    <p>vinhnqse150131@fpt.edu.vn</p>
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Nguyễn Quốc Vinh<i class="material-icons right">close</i></span>
+                    <p>
+                        một con người yêu tự do và những điều thù vị xung quanh. luôn tìm kiếm những điều bản thân cảm thấy thích thú.
+                    </p>
                 </div>
             </div>
-            <div>
-                <form className='form'>
-                    <h2 className='form-heading'>Send us the message</h2>
-                    <div className='form-group'>
-                        <input type='text' className='form-input' placeholder='Tell us your name'></input>
-                    </div>
-                    <div className='form-group'>
-                        <input type='text' className='form-input' placeholder='First Name'></input>
-                    </div>
-                    <div className='form-group'>
-                        <input type='text' className='form-input' placeholder='Last Name'></input>
-                    </div>
-                    <div className='form-group'>
-                        <input type='text' className='form-input' placeholder='Your Email'></input>
-                    </div>
-                    <div className='form-group'>
-                        <input type='text' className='form-input' placeholder='Your Phone'></input>
-                    </div>
-                    <div className='form-group'>
-                        <textarea
-                            rows='5' cols='10'
-                            className='form-input'
-                            placeholder='Give us your message'
-                            textarea=''>
-                        </textarea>
-                    </div>
-                    <input type='submit' className='form-submit' value='Send message'></input>
-                </form>
+            <div className='card'>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="black-text">Links</h5>
+                    <ul>
+                        <li><a class="black-text text-lighten-3" href="https://github.com/VinhUser">Github: Vinhuser</a></li>
+                        <li><a class="black-text text-lighten-3" href="https://www.facebook.com/kosakiyuuki/">Facebook: Vinh Nguyễn</a></li>
+                        <li><a class="black-text text-lighten-3" href="#!">Phone: 0359404798</a></li>
+                        <li><a class="black-text text-lighten-3" href="https://vinhomes.vn/vi">Vinhomes Grand Park, Quận 9, TPHCM</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     )

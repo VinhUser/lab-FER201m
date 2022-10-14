@@ -7,17 +7,24 @@ export default function Header() {
   const {dark, theme, toggle} = useContext(ThemeContext)
   const background = theme.backgroundColor
   const color = theme.color
+  
   return (
-    <div className='header'>
-        <ul className='ul' style={{backgroundColor: background}} >
-          <li><a className='active nav-a' style={{color: color}} href='#home'>Home</a></li>
-          <li><a className='nav-a' style={{color: color}} href='#news'>News</a></li>
-          <li><a className='nav-a' style={{color: color}} href='#about'>About</a></li>
-          <li><a className='nav-a' style={{color: color}} href='/contact'>Contact</a></li>
+    <nav>
+    <div class="nav-wrapper">
+      <a href="/" class="brand-logo"><i class="material-icons">home</i> Home</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="sass.html">New</a></li>
+        <li><a href="badges.html">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li>
           <a href='#' className='switch' onClick={toggle} style={{backgroundColor: background, color: color}} >
             Switch into {!dark ? 'Dark' : 'Light'} mode
           </a>
-        </ul>
+        </li>
+      </ul>
     </div>
+  </nav>
+  
   )
+      
 }

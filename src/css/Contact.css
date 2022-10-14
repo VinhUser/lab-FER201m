@@ -1,78 +1,18 @@
-    
+
 .contact{
-    background: url('/public/images/bg.jpg');
-    background-size: cover;
-    background-position-y: -70px;
-    display: grid;
-    grid-template-columns: 45% 30%;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
-}
-.contact .content-left{
-    margin-right: 50px;
-    display: inline-block;
-}
-.contact span{
-    color: aqua;
-}
-
-.content-left{
-    width: 50%;
-
-    font-size: 20px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, Helvetica, sans-serif;
-    color: #fff;
-    padding-left: 30px;
-}
-.address{
-    margin-top: -30px;
-    margin-bottom: 50px;
-}
-.phone{
-    margin-top: 30px;
-    margin-bottom: 50px;
-}
-.email{
-    margin-top: 30px;
-    margin-bottom: 50px;   
-}
-
-.form-heading{
-    font-size: 40px;
-    color: #f5f5f5;
-    text-align: center;
-    margin-bottom: 30px;
-}
-.form-group{
-    border-bottom: 1px solid #fff;
-    margin-top: 15px;
-    margin-bottom: 20px;
     display: flex;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+.card {
+    overflow: hidden;
+    box-shadow: gray 5px 4px 9px 0px;
+    width: calc(30% - 30px);
+    margin-left: 20px;
+    text-align: center;
+    color: black;
+}
+.contact ul{
+    padding-top: 20%;
 }
 
-.form-input{
-    background: transparent;
-    border: 0;
-    outline: 0;
-    color: #f5f5f5;
-    flex-grow: 1;
-}
-.form-input::placeholder{
-    color: #f5f5f5;
-}
-.form-submit{
-    background: transparent;
-    border: 1px solid #f5f5f5;
-    color: #fff;
-    width: 100%;
-    text-transform: uppercase;
-    padding: 6px 10px;
-    transition: 0.25s ease-in-out;
-    margin-top: 30px;
-}
-.form-submit:hover{
-    border: 1px solid #54a0ff;
-}

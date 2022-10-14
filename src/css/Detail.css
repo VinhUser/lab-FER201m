@@ -77,3 +77,25 @@
 
     color: #7D6E83;
 }
+/* .modal-show {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+} */
+
+/* .modal-show:target {
+    visibility: visible;
+    opacity: 1;
+} */
+.Modal-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
